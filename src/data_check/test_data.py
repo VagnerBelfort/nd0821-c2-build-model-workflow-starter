@@ -23,6 +23,7 @@ def test_column_names(data):
         "calculated_host_listings_count",
         "availability_365",
     ]
+    print(data.columns.values)
 
     these_columns = data.columns.values
 
@@ -60,6 +61,8 @@ def test_similar_neigh_distrib(data: pd.DataFrame, ref_data: pd.DataFrame, kl_th
     assert scipy.stats.entropy(dist1, dist2, base=2) < kl_threshold
 
 
-########################################################
-# Implement here test_row_count and test_price_range   #
-########################################################
+def test_row_count(data):
+    """
+    Test number of rows in the dataset
+    """
+    assert 15000 < data.shape[0] < 1000000

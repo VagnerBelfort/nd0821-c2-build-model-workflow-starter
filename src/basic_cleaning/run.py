@@ -33,7 +33,7 @@ def go(args):
     df['last_review'] = pd.to_datetime(df['last_review'])
     logger.info("Transforming last_review column as date type.")
 
-    df.to_csv("clean_sample.csv", index=False)
+    df.to_csv("clean_sample.csv")
     logger.info("Save dataset clean")
 
     #update wandb
