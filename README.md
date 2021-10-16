@@ -567,3 +567,12 @@ you have trained your new model on the new data.
 ## License
 
 [License](LICENSE.txt)
+
+
+```bash
+> mlflow run https://github.com/VagnerBelfort/nd0821-c2-build-model-workflow-starter \
+             -v -v 1.0.1 \
+             -P hydra_options="etl.sample='sample2.csv'"
+```
+
+The Weights and Biases experiment tracking can be found here: https://wandb.ai/vagnerbelfort/nyc_airbnb
