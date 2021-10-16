@@ -571,7 +571,7 @@ you have trained your new model on the new data.
 
 ```bash
 > mlflow run https://github.com/VagnerBelfort/nd0821-c2-build-model-workflow-starter \
-             -v -v 1.0.1 \
+             -v -v 1.0.2 \
              -P hydra_options="etl.sample='sample2.csv'"
 ```
 
